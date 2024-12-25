@@ -81,3 +81,5 @@ func proxyHandler(w http.ResponseWriter, r *http.Request) {
     }
 }
 ```
+## Results
+![alt-text](docs/streaming-response.gif)
