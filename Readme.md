@@ -1,9 +1,9 @@
 
 # How to Stream on HTTP connection 
 ( like all the llms do )
-
 ### Why? 
 Since all the LLMs streamed response, I found it very difficult to reroute the packets to the client when calling it from the backend.
+
 This made me lose the whole functionality as the server would wait for the full response, and then send the whole reposonse together. So I decided to learn the implimentation of the streaming feature to understand it better. 
 
 ### its pretty simple...
@@ -17,7 +17,15 @@ This made me lose the whole functionality as the server would wait for the full 
 > The Implimentation is very minimal. ( MVP )
 
 in the Code Snippets below, I have not handled all the errors, You can find the working code in the repository. [github.com/kirtansoni/streaming-in-http](github.com/kirtansoni/streaming-in-http) 
+### How to run 
+```bash
+## main server
+go run main.go 
 
+## chunk generator
+cd chunk\ generator
+go run .
+```
 
 ## Chunk Generator
 
